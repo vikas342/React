@@ -9,6 +9,7 @@ import ProtectedRoutes from "./ProtectedRoutes";
 import CustomeHook from "../pages/CustomeHook";
 import ApiCall from "../pages/ApiCall";
 import ReactHookForm from "../pages/ReactHookForm";
+import Zustand from "../pages/Zustand";
 
 export default function AppRoutes() {
   const isAuth = !!localStorage.getItem("user");
@@ -43,7 +44,7 @@ export default function AppRoutes() {
 
           <Route path="react-hook-form" element={<ReactHookForm />} />
 
-
+          <Route path="zustand" element={<Zustand />} />
 
         </Route>
       </Route>
